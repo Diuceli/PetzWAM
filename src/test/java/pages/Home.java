@@ -10,7 +10,7 @@ public class Home extends Base {
 
     // 1- Mapeamentos de Elementos
     @FindBy(id= "search")
-    private WebElement txtInputSearch;
+    private WebElement txtInputSearch;  //Nome da caixa de pesquisa
 
     @FindBy(css = "button.button-search")
     private WebElement btnSearch;
@@ -30,7 +30,7 @@ public class Home extends Base {
         txtInputSearch.clear();              // Limpar o conteúdo da caixa de texto
         txtInputSearch.sendKeys(product);    // Escreve na caixa de texto
     }
-    // Feature --> Steps --> searchWith...
+    // Feature --> Steps --> searchWith... --> serach
 
     public void searchWithMagnifierButton(String product){//Pesquisar com botão na Lupa
         search(product);
